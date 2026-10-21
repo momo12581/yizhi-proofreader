@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: yizhi-proofreader
+    runtime: docker
+    plan: free
+    region: singapore
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: "3000"
+      # 留空 = 公开访问（所有人可用）。如需口令门，填一个值即可。
+      - key: ACCESS_CODE
+        value: ""
+      - key: TASK_TTL_DAYS
+        value: "7"
+      - key: HF_HOME
+        value: /app/.cache/huggingface
+      - key: TESSDATA_PREFIX
+        value: /app/.cache/tessdata

@@ -1,0 +1,26 @@
+{
+  "name": "yizhi-proofreader",
+  "version": "1.8.0",
+  "private": true,
+  "type": "module",
+  "description": "内部课程资料内容口径校对工具",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22.3.0"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^4.3.1",
+    "@tesseract.js-data/chi_sim": "^1.0.0",
+    "express": "^5.1.0",
+    "jszip": "^3.10.1",
+    "multer": "^2.0.2",
+    "pdf-parse": "^2.4.5",
+    "sharp": "^0.35.5",
+    "sts-whisper-tiny": "^1.0.0",
+    "tesseract.js": "^7.0.0"
+  }
+}
