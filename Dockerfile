@@ -1,7 +1,7 @@
 FROM node:24-bookworm-slim
 
 ENV NODE_ENV=production \
-    PORT=3000 \
+    PORT=7860 \
     # HuggingFace 模型缓存目录（whisper-tiny 等运行时下载到此）
     HF_HOME=/app/.cache/huggingface \
     # tesseract 语言包缓存目录（chi_sim 运行时下载到此）
@@ -27,5 +27,5 @@ RUN mkdir -p /app/.cache/huggingface /app/.cache/tessdata \
   && chown -R node:node /app
 
 USER node
-EXPOSE 3000
+EXPOSE 7860
 CMD ["node", "server.js"]

@@ -1,3 +1,13 @@
+---
+title: 易知校读器
+emoji: 📝
+colorFrom: green
+colorTo: blue
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # 一致 · 内容口径校对
 
 这是一个可独立运行的内部校对工具。它保留了原型的上传页、问题清单、风险筛选、证据查看和 CSV 导出，并补齐了文档、图片 OCR 与本地音视频转写链路。
